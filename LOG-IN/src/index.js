@@ -43,7 +43,7 @@ app.post('/signup', async (req, res) => {
         }
     }
     catch {
-        res.send("PLease check you Email Address")
+        res.send("PLease check")
     }
     res.status(201).render("/", {
     })
@@ -59,7 +59,7 @@ app.post('/login', async (req, res) => {
         }
     }
     catch (e) {
-        res.send("Please check your email address")
+        res.send("Please check")
     }
 })
 app.listen(port, () => {
