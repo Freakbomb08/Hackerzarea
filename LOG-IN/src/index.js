@@ -15,8 +15,6 @@ app.set('view engine', 'js')
 app.set('views', tempelatePath)
 app.use(express.static(publicPath))
 
-// hbs.registerPartials(partialPath)
-
 app.get('/', (req, res) => {
     res.render('login')
 })
