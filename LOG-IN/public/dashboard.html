@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Dashboard</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="icon" type="images" href="#">
+</head>
+<body>
+    <div class="dashboard">
+        <h2>Welcome to Your Dashboard</h2>
+
+        <h3>Update Your Email</h3>
+        <form id="updateEmailForm" action="/api/auth/update-email" method="POST">
+            <label for="email">New Email:</label>
+            <input type="email" id="email" name="email" required>
+            <input type="submit" value="Update Email">
+        </form>
+
+        <h3>Change Your Password</h3>
+        <form id="updatePasswordForm" action="/api/auth/update-password" method="POST">
+            <label for="currentPassword">Current Password:</label>
+            <input type="password" id="currentPassword" name="currentPassword" required>
+
+            <label for="newPassword">New Password:</label>
+            <input type="password" id="newPassword" name="newPassword" required>
+
+            <input type="submit" value="Change Password">
+        </form>
+
+        <button class="logout" onclick="window.location.href='/logout'">Logout</button>
+    </div>
+    <script src="/js/form.js"></script>
+</body>
+</html>

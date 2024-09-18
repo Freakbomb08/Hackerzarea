@@ -1,0 +1,118 @@
+/* General Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f4f8;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #333;
+}
+
+h2 {
+    color: #2c3e50;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+form {
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    width: 350px;
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 8px;
+    font-size: 14px;
+}
+
+input[type="email"],
+input[type="password"],
+input[type="text"] {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #dcdfe6;
+    border-radius: 8px;
+    box-sizing: border-box;
+    font-size: 14px;
+    background-color: #f9fafb;
+}
+
+input[type="submit"] {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover {
+    background-color: #2980b9;
+}
+
+p {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+a {
+    color: #3498db;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Styles for the Dashboard */
+.dashboard {
+    width: 400px;
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    color: #333;
+}
+
+.dashboard h3 {
+    color: #34495e;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+button.logout {
+    background-color: #e74c3c;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+}
+
+button.logout:hover {
+    background-color: #c93626;
+}
+
+#message {
+    margin-top: 20px;
+    font-size: 16px;
+    font-weight: bold;
+}
